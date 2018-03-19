@@ -1,0 +1,10 @@
+.wrapper {
+  overflow: hidden;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  &--about{
+    height: 48vh;
+  }
+}

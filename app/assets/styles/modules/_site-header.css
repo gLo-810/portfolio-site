@@ -1,0 +1,6 @@
+.site-header {
+  position: fixed;
+  background-color: yellow;
+  width: 100%;
+  z-index: 2;
+}

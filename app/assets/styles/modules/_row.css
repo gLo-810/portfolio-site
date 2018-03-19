@@ -1,0 +1,24 @@
+.row {
+ @mixin clearfix;
+
+  &--gutters {
+    margin-right: -25px;
+  }
+
+  &--gutters > div {
+    margin-right: 25px;
+  }
+
+
+
+  &__4 {
+    float:left;
+    width: 33.33%;
+  }
+
+  &__8 {
+    float: right;
+    width: 66.66%;
+  }
+
+}

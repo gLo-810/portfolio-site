@@ -1,0 +1,27 @@
+.about {
+  background-color: blue;
+  height: 48vh;
+
+  img {
+    position: relative;
+    top: 100px;
+    left: 275px;
+  }
+
+  &__text-content {
+    position: relative;
+    bottom: 150px;
+    right: 275px;
+    float: right;
+    display: inline-block;
+
+    p {
+      width: 350px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+}

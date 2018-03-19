@@ -1,0 +1,35 @@
+.projects {
+  background-color: green;
+  height: 80vh;
+
+  &__heading {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    height: 100px;
+  }
+
+  &__project-box {
+    height: 350px;
+    width: 730px;
+    background-color: white;
+    padding: 20px;
+    /* display: inline-block; */
+
+    img {
+      position: relative;
+      bottom: 250px;
+      width: 235px;
+      height: 250px;
+      float: right;
+    }
+  }
+
+  &__text-box {
+    text-align: left;
+    width: 250px;
+    h1, p {
+      margin: 0;
+    }
+  }
+}
