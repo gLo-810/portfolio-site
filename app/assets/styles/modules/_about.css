@@ -1,14 +1,57 @@
 .about {
   background-color: blue;
-  height: 48vh;
+  height: 35vh;
 
-  img {
+  .about-flex {
+    display: flex;
+    margin-top: 20px;
+    /* justify-content: space-between; */
+
+
+
+    &__img-col {
+      display: flex;
+      padding: 0;
+      margin: 20px 16px 16px 16px;
+      /* flex-basis: 50%; */
+      justify-content: flex-end;
+      img {
+
+      }
+    }
+
+    &__text-content-1 {
+      flex: 1;
+      flex-basis: 10%;
+      padding: 10px;
+
+    }
+
+    &__text-content-2 {
+      flex: 1;
+      flex-basis: 10%;
+      padding: 10px;
+
+    }
+
+  }
+
+
+  /* display: flex;
+  flex: 1;
+  flex-direction: row; */
+
+
+
+
+
+  /* img {
     position: relative;
     top: 100px;
     left: 275px;
-  }
+  } */
 
-  &__text-content {
+  /* &__text-content {
     position: relative;
     bottom: 150px;
     right: 275px;
@@ -22,6 +65,6 @@
     h2 {
       margin: 0;
     }
-  }
+  } */
 
 }

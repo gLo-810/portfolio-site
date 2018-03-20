@@ -1,0 +1,29 @@
+/* .about-flex {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+
+
+  &__img-col {
+    flex: 1;
+    padding: 0;
+    margin: 20px 16px 16px 16px;
+    flex-basis: 0%;
+  }
+
+  &__text-content-1 {
+    flex: 1;
+    flex-basis: 20%;
+    padding: 10px;
+
+  }
+
+  &__text-content-2 {
+    flex: 1;
+    flex-basis: 20%;
+    padding: 10px;
+
+  }
+
+} */
