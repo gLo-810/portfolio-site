@@ -1,6 +1,6 @@
 .projects {
   background-color: green;
-  height: 80vh;
+  height: 100vh;
 
   &__heading {
     position: relative;
@@ -9,27 +9,30 @@
     height: 100px;
   }
 
-  &__project-box {
-    height: 350px;
-    width: 730px;
-    background-color: white;
-    padding: 20px;
-    /* display: inline-block; */
+  &__container {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 20%;
+    flex-wrap: wrap;
 
-    img {
-      position: relative;
-      bottom: 250px;
-      width: 300px;
-      height: 250px;
-      float: right;
+  &  .projects__project-box {
+      height: 300px;
+      width: 730px;
+      background-color: white;
+      padding: 20px;
+      display: flex;
+
+    &  img {
+      flex: 1;
+        width: 300px;
+        height: 250px;
+      }
+
+    & .projects__text-box {
+      flex: 1;
     }
   }
+}
 
-  &__text-box {
-    text-align: left;
-    width: 250px;
-    h1, p {
-      margin: 0;
-    }
-  }
 }
