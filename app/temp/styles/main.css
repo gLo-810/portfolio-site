@@ -482,27 +482,9 @@ body {
 
 .about {
   background-color: blue;
-  height: 48vh;
+  height: 40vh;
 
 }
-
-.about img {
-    position: relative;
-    top: 100px;
-    left: 275px;
-  }
-
-.about__text-content {
-    position: relative;
-    bottom: 150px;
-    right: 275px;
-    float: right;
-    display: inline-block;
-  }
-
-.about__text-content p {
-      width: 350px;
-    }
 
 .about__text-content h2 {
       margin: 0;
@@ -511,40 +493,41 @@ body {
 .projects {
   background-color: green;
   height: 80vh;
+
+
 }
 
+/* position: relative; */
+
 .projects__heading {
-    position: relative;
-    top: 50px;
     text-align: center;
-    height: 100px;
   }
 
 .projects__project-box {
-    height: 350px;
-    width: 730px;
-    background-color: white;
-    padding: 20px;
-  }
+    height: 300px;
+    /* background-color: white; */
+    /* border: solid 1px black; */
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    -webkit-transform: translatex(2%), translateY(2%);
+            transform: translatex(2%), translateY(2%);
 
-/* display: inline-block; */
+  }
 
 .projects__project-box img {
-      position: relative;
-      bottom: 250px;
-      width: 235px;
+      width: 300px;
       height: 250px;
-      float: right;
+      margin-right: -25px;
     }
 
-.projects__text-box {
-    text-align: left;
-    width: 250px;
-  }
-
-.projects__text-box h1, .projects__text-box p {
-      margin: 0;
+.projects__project-box .projects__text-box {
+      text-align: left;
     }
+
+.projects__project-box .projects__text-box h1 {
+        margin-top: 0em;
+      }
 
 .site-header {
   position: fixed;
@@ -579,14 +562,10 @@ body {
 
 .wrapper {
   overflow: hidden;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin: 0 auto;
 }
-
-.wrapper--about{
-    height: 48vh;
-  }
 
 .logo {
   max-width: 100px;
@@ -594,23 +573,37 @@ body {
 
 .row {
  @mixin clearfix;
+padding-right: -20px;
+}
+
+.col {
+  width: 100%;
+  float: left;
+  padding-right: 20px;
 
 }
 
-.row--gutters {
-    margin-right: -25px;
+.col__8--wide{
+    min-width: 327px;
+    /* padding-right: 20px; */
   }
 
-.row--gutters > div {
-    margin-right: 25px;
+.col--lg-2 {
+    width: 25%;
   }
 
-.row__4 {
-    float:left;
-    width: 33.33%;
+.col--lg-5 {
+    width: 37.5%;
   }
 
-.row__8 {
-    float: right;
-    width: 66.66%;
+.col--lg-4 {
+    width: 30%;
   }
+
+.col--lg-6 {
+    width: 50%;
+  }
+
+.page-section {
+  padding: 4% 0;
+}
