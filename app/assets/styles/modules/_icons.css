@@ -1,6 +1,22 @@
 .icons {
+  position: relative;
   i {
-    font-size: 40px;
+    color: white;
+    font-size: 2rem;
+    padding-right: 20px;
+  }
+
+  &--footer  a > i{
+    font-size: 2.5rem;
     padding-right: 50px;
   }
+
+  &__arrow {
+    position: relative;
+    top: 3.125rem;
+    a > i {
+      font-size: 4.5rem;
+    }
+  }
+
 }

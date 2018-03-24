@@ -454,6 +454,7 @@ template {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
 
 * {
@@ -462,9 +463,10 @@ body {
 }
 
 .hero {
-  background-color: red;
+  background-color: skyblue;
   height: 100vh;
   max-width: 100%;
+
 
 }
 
@@ -476,16 +478,25 @@ body {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
+    top: 38%;
     left: 0;
+
+    /* h3 {
+      font-size: 1.17rem;
+    } */
+
+
   }
 
+.hero__text-content h1 {
+      font-size: 5rem;
+    }
+
 .hero__text-content--center {
-    position: absolute;
+    /* position: absolute;
     width: 100%;
+    transform: translateX(2%); */
     text-align: center;
-    -webkit-transform: translateX(2%);
-            transform: translateX(2%);
   }
 
 .about {
@@ -500,7 +511,7 @@ body {
 
 .projects {
   background-color: green;
-  height: 80vh;
+  height: 75vh;
 }
 
 /* position: relative; */
@@ -542,7 +553,7 @@ body {
 
 .site-header {
   position: fixed;
-  background-color: yellow;
+  background-color: skyblue;
   width: 100%;
   z-index: 2;
 }
@@ -615,31 +626,41 @@ padding-right: -20px;
     width: 50%;
   }
 
-.icons i {
-    font-size: 40px;
-    padding-right: 50px;
-  }
+.icons {
+  position: relative;
 
-.footer {
-  text-align: center;
-  height: 5vh;
 }
 
-.footer ul {
-    margin: 10px;
-    /* padding: 10px; */
-  }
-
-.footer li {
-    list-style: none;
-    float: left;
+.icons i {
+    color: white;
+    font-size: 2rem;
     padding-right: 20px;
   }
 
-.footer a {
-    text-decoration: none;
+.icons--footer  a > i{
+    font-size: 2.5rem;
+    padding-right: 50px;
   }
 
-.page-section {
-  padding: 4% 0;
+.icons__arrow {
+    position: relative;
+    top: 3.125rem;
+  }
+
+.icons__arrow a > i {
+      font-size: 4.5rem;
+    }
+
+.footer {
+  text-align: center;
+  height: 6vh;
+  background-color: powderblue;
 }
+
+.page-section {
+  padding: 2% 0;
+}
+
+.page-section--footer{
+    padding: 0.5rem;
+  }

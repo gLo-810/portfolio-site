@@ -1,5 +1,5 @@
 .hero {
-  background-color: red;
+  background-color: skyblue;
   height: 100vh;
   max-width: 100%;
 
@@ -11,15 +11,26 @@
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 50%;
+    top: 38%;
     left: 0;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    /* h3 {
+      font-size: 1.17rem;
+    } */
+
+
   }
 
   &__text-content--center {
-    position: absolute;
+    /* position: absolute;
     width: 100%;
+    transform: translateX(2%); */
     text-align: center;
-    transform: translateX(2%);
   }
+
 
 }
