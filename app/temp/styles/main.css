@@ -480,6 +480,14 @@ body {
     left: 0;
   }
 
+.hero__text-content--center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+
 .about {
   background-color: blue;
   height: 40vh;
@@ -493,8 +501,6 @@ body {
 .projects {
   background-color: green;
   height: 80vh;
-
-
 }
 
 /* position: relative; */
@@ -511,12 +517,13 @@ body {
     height: 300px;
     /* background-color: white; */
     /* border: solid 1px black; */
-    padding: 25px;
+    /* padding: 25px; */
+    padding-left: 60px;
+    padding-top: 20px;
     text-align: center;
     position: relative;
     -webkit-transform: translatex(2%), translateY(2%);
             transform: translatex(2%), translateY(2%);
-
   }
 
 .projects__project-box img {
@@ -606,6 +613,31 @@ padding-right: -20px;
 
 .col--lg-6 {
     width: 50%;
+  }
+
+.icons i {
+    font-size: 40px;
+    padding-right: 50px;
+  }
+
+.footer {
+  text-align: center;
+  height: 5vh;
+}
+
+.footer ul {
+    margin: 10px;
+    /* padding: 10px; */
+  }
+
+.footer li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+  }
+
+.footer a {
+    text-decoration: none;
   }
 
 .page-section {

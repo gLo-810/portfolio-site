@@ -15,4 +15,11 @@
     left: 0;
   }
 
+  &__text-content--center {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateX(2%);
+  }
+
 }
