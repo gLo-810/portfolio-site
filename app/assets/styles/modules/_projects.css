@@ -6,6 +6,9 @@
 
   &__heading {
     text-align: center;
+    h1{
+      margin-top: 0;
+    }
   }
 
   &__project-box {
