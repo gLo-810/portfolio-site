@@ -6,19 +6,20 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="temp/styles/main.css">
     <link rel="stylesheet" href="temp/styles/css/fontawesome-all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
   </head>
   <body>
   <header class="site-header">
 
     <div class="wrapper">
-      <div class="logo">
+      <!-- <div class="logo">
         <h2>nav logo</2>
-      </div>
+      </div> -->
 
       <nav class="primary-nav primary-nav--pull-right">
         <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#">Github</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
@@ -26,8 +27,9 @@
     </div>
 
   </header>
-  <div class="hero">
 
+  <!-- HERO  -->
+  <div id="hero" class="hero wrapper">
     <div class="hero__text-content">
       <h1>Gabe Lopez</h1>
       <h2>Front End Developer</h2>
@@ -41,13 +43,13 @@
       </div>
     </div>
   </div>
-  <div class="about  wrapper">
+  <!-- ABOUT  -->
+  <div id="about" class="about wrapper">
       <div class="row page-section about--pull">
 
         <div class="col col--lg-2 col__8--wide">
           <img src="assets/images/laptop.jpg" alt="">
         </div>
-
 
           <div class="col col--lg-5 about__text-content">
             <h2>About Me</h2>
@@ -61,7 +63,8 @@
 
       </div>
   </div>
-  <div class="projects wrapper">
+  <!-- PROJECTS  -->
+  <div id="projects" class="projects wrapper">
 
         <div class="row  page-section">
           <div class="projects__heading">
@@ -85,9 +88,6 @@
     </div>
 
     <div class="row  page-section">
-      <!-- <div class="projects__heading">
-        <h1>Projects</h1>
-        </div> -->
       <div class=" col col--lg-6 projects__project-box  ">
             <div class="projects__text-box col col--lg-6">
               <h1>Test Project</h1>
@@ -115,5 +115,7 @@
           </div>
       </nav>
   </footer>
+
+  <script type="text/javascript" src="temp/scripts/App.js"></script>
   </body>
 </html>
