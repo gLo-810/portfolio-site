@@ -2,27 +2,30 @@ import $ from 'jquery';
 import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
-  // dom selection usually and firing events when a page loads.
+  
   constructor(){
     this.headerLinks = $("nav.primary-nav a");
-    // this.headerAttr = this.headerLinks.prop('href');
     this.events();
     $.smoothScroll();
   }
   
   events() {
     var that = this;
-    this.headerLinks.each(function() {
-      that.headerLinks.click(function() {
+    this.headerLinks.click(function() {
+      var currentLink = that.headerLinks
+      var matchCurrentLink = currentLink.attr('data-matching-link');
+      currentLink.each(function(e){
+        
+      });
       $.smoothScroll({
-        scrollElement: that.headerLinks,
+        scrollElement: e.currentLink,
         speed: 1000,
         offset: -100,
-        scrollTarget: that.headerLinks.attr('href')
+        scrollTarget: matchCurrentLink
       });
       console.log(that.headerLinks.attr('href'));
+      console.log(matchCurrentLink);  
       return false;
-      });
     });
     
   }

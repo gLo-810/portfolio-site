@@ -10514,12 +10514,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var StickyHeader = function () {
-  // dom selection usually and firing events when a page loads.
   function StickyHeader() {
     _classCallCheck(this, StickyHeader);
 
     this.headerLinks = (0, _jquery2.default)("nav.primary-nav a");
-    // this.headerAttr = this.headerLinks.prop('href');
     this.events();
     _jquery2.default.smoothScroll();
   }
@@ -10528,17 +10526,19 @@ var StickyHeader = function () {
     key: 'events',
     value: function events() {
       var that = this;
-      this.headerLinks.each(function () {
-        that.headerLinks.click(function () {
-          _jquery2.default.smoothScroll({
-            scrollElement: that.headerLinks,
-            speed: 1000,
-            offset: -100,
-            scrollTarget: that.headerLinks.attr('href')
-          });
-          console.log(that.headerLinks.attr('href'));
-          return false;
+      this.headerLinks.click(function () {
+        var currentLink = that.headerLinks;
+        var matchCurrentLink = currentLink.attr('data-matching-link');
+        currentLink.each(function (e) {});
+        _jquery2.default.smoothScroll({
+          scrollElement: e.currentLink,
+          speed: 1000,
+          offset: -100,
+          scrollTarget: matchCurrentLink
         });
+        console.log(that.headerLinks.attr('href'));
+        console.log(matchCurrentLink);
+        return false;
       });
     }
   }]);
