@@ -1,11 +1,24 @@
 .about {
   background-color: navy;
-  height: 35vh;
+  height: 90vh;
+
+
 
   &__text-content {
+    padding-right: 0px
 
     h2 {
+      text-align: center;
       margin: 0;
+    }
+  }
+
+  @mixin atLarge {
+    height: 35vh;
+    img {
+      width: 134px;
+      height: 107.609px;
+      text-align: center;
     }
   }
 

@@ -3,25 +3,30 @@
   float: left;
   padding-right: 20px;
 
-  &__8--wide{
-    min-width: 327px;
-    /* padding-right: 20px; */
+  @mixin atSmall {
+    &-xs-11 {
+      padding-right: 0;
+    }
   }
 
-  &--lg-2 {
-    width: 25%;
-  }
+  @mixin atLarge {
+    &__8--wide{
+      min-width: 327px;
+    }
+    &--lg-2 {
+      width: 25%;
+    }
 
-  &--lg-5 {
-    width: 37.5%;
-  }
+    &--lg-5 {
+      width: 37.5%;
+    }
 
-  &--lg-4 {
-    width: 30%;
-  }
+    &--lg-4 {
+      width: 30%;
+    }
 
-  &--lg-6 {
-    width: 50%;
+    &--lg-6 {
+      width: 50%;
+    }
   }
-
 }

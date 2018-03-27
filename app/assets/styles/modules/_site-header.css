@@ -1,6 +1,6 @@
 .site-header {
   position: fixed;
-  background-color: navy;
+  background-color: red;
   width: 100%;
   z-index: 2;
 }

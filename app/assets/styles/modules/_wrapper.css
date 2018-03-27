@@ -1,6 +1,11 @@
 .wrapper {
   overflow: hidden;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
+
+  @mixin atLarge {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

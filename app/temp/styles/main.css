@@ -478,19 +478,22 @@ body {
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 38%;
+    top: 26%;
     left: 0;
-
-    /* h3 {
-      font-size: 1.17rem;
-    } */
-
 
   }
 
 .hero__text-content h1 {
       font-size: 5rem;
     }
+
+@media (min-width: 1440px) {
+
+.hero__text-content {
+        top: 38%
+
+  }
+  }
 
 .hero__text-content--center {
     /* position: absolute;
@@ -501,13 +504,25 @@ body {
 
 .about {
   background-color: navy;
-  height: 35vh;
+  height: 90vh;
 
 }
+
+.about img {
+    text-align: center;
+  }
 
 .about__text-content h2 {
       margin: 0;
     }
+
+@media (min-width: 1440px) {
+
+.about {
+    height: 35vh
+
+}
+  }
 
 .projects {
   background-color: steelblue;
@@ -553,24 +568,35 @@ body {
 
 .site-header {
   position: fixed;
-  background-color: navy;
+  background-color: red;
   width: 100%;
   z-index: 2;
 }
 
 .primary-nav {
   position: relative;
-  /* bottom: 40px; */
   height: 10vh;
 }
 
-.primary-nav--pull-right {
-    float: right;
+@media (min-width: 1440px) {
+    .primary-nav--pull-right {
+      float: right;
+    }
   }
 
 .primary-nav ul {
+    position: relative;
+    left: .96rem;
+    top: .96rem;
+    padding: 10px 0;
     margin: 0;
-    padding: 0;
+  }
+
+@media (min-width: 1440px) {
+
+.primary-nav ul {
+      padding: 20px 0
+  }
   }
 
 .primary-nav li {
@@ -586,46 +612,69 @@ body {
 
 .wrapper {
   overflow: hidden;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
+
+@media (min-width: 1440px) {
+
+.wrapper {
+    padding-left: 100px;
+    padding-right: 100px
+}
+  }
 
 .logo {
   max-width: 100px;
 }
 
 .row {
- @mixin clearfix;
 padding-right: -20px;
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .col {
   width: 100%;
   float: left;
   padding-right: 20px;
-
 }
 
-.col__8--wide{
-    min-width: 327px;
-    /* padding-right: 20px; */
+@media (min-width: 411px) {
+
+.col {
+    padding-right: 20px
+}
+    .col-xs-11 {
+      padding-right: 0;
+    }
   }
 
-.col--lg-2 {
-    width: 25%;
-  }
+@media (min-width: 1440px) {
+    .col__8--wide{
+      min-width: 327px;
+      /* padding-right: 20px; */
+    }
+    .col--lg-2 {
+      width: 25%;
+    }
 
-.col--lg-5 {
-    width: 37.5%;
-  }
+    .col--lg-5 {
+      width: 37.5%;
+    }
 
-.col--lg-4 {
-    width: 30%;
-  }
+    .col--lg-4 {
+      width: 30%;
+    }
 
-.col--lg-6 {
-    width: 50%;
+    .col--lg-6 {
+      width: 50%;
+    }
   }
 
 .icons {

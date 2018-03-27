@@ -1,15 +1,24 @@
 .primary-nav {
   position: relative;
-  /* bottom: 40px; */
   height: 10vh;
 
-  &--pull-right {
-    float: right;
+  @mixin atLarge {
+    &--pull-right {
+      float: right;
+    }
   }
 
   ul {
+    position: relative;
+    left: .96rem;
+    top: .96rem;
+    padding: 10px 0;
     margin: 0;
-    padding: 0;
+
+
+    @mixin atLarge {
+      padding: 20px 0;
+    }
   }
 
   li {
