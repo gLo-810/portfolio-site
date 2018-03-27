@@ -10478,7 +10478,7 @@ var SmoothScroll = function () {
   function SmoothScroll() {
     _classCallCheck(this, SmoothScroll);
 
-    this.links = (0, _jquery2.default)('.primary-nav a');
+    this.links = (0, _jquery2.default)('.primary-nav a', '.icons a');
     this.events();
   }
 
