@@ -3,7 +3,6 @@
 @import 'base/_mixins';
 @import 'base/_global.css';
 @import 'modules/_hero.css';
-@import 'modules/_about.css';
 @import 'modules/_projects.css';
 @import 'modules/_site-header.css';
 @import 'modules/_primary-nav.css';
@@ -14,3 +13,4 @@
 @import 'modules/_icons.css';
 @import 'modules/_footer.css';
 @import 'modules/_page-section.css';
+@import 'modules/_about.css';

@@ -1,7 +1,10 @@
 .about {
-  background-color: navy;
+  background-color: rgb(90, 128, 0);
   height: 90vh;
 
+  img {
+    display: none;
+  }
 
 
   &__text-content {
