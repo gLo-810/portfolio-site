@@ -1,5 +1,3 @@
-import SaveInput from './modules/SaveInput';
-import Display from './modules/Display';
+import SmoothScroll from './modules/SmoothScroll';
 
-const saveInput = new SaveInput();
-const display = new Display ();
+var smoothScroll = new SmoothScroll();
