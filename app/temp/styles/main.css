@@ -452,6 +452,32 @@ template {
 
 /*this teal color is equivalent to lighten function in SASS and is postCSS specific*/
 
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@define-mixin atSmall {
+  @media (min-width: 411px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atLarge {
+  @media (min-width: 1440px) {
+    @mixin-content;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -481,19 +507,15 @@ body {
     top: 26%;
     left: 0;
 
+    @mixin atLarge {
+        top: 38%;
+      }
+
   }
 
 .hero__text-content h1 {
       font-size: 5rem;
     }
-
-@media (min-width: 1440px) {
-
-.hero__text-content {
-        top: 38%
-
-  }
-  }
 
 .hero__text-content--center {
     /* position: absolute;
@@ -506,23 +528,32 @@ body {
   background-color: navy;
   height: 90vh;
 
+
+  @mixin atLarge {
+    height: 35vh;
+
+    img {
+      width: 134px;
+      height: 107.609px;
+      text-align: center;
+    }
+  }
+
 }
 
 .about img {
-    text-align: center;
+    display: none;
+  }
+
+.about__text-content {
+    padding-right: 0px;
+
   }
 
 .about__text-content h2 {
+      text-align: center;
       margin: 0;
     }
-
-@media (min-width: 1440px) {
-
-.about {
-    height: 35vh
-
-}
-  }
 
 .projects {
   background-color: steelblue;
@@ -576,13 +607,13 @@ body {
 .primary-nav {
   position: relative;
   height: 10vh;
-}
 
-@media (min-width: 1440px) {
-    .primary-nav--pull-right {
+  @mixin atLarge {
+    &--pull-right {
       float: right;
     }
   }
+}
 
 .primary-nav ul {
     position: relative;
@@ -590,13 +621,11 @@ body {
     top: .96rem;
     padding: 10px 0;
     margin: 0;
-  }
 
-@media (min-width: 1440px) {
 
-.primary-nav ul {
-      padding: 20px 0
-  }
+    @mixin atLarge {
+      padding: 20px 0;
+    }
   }
 
 .primary-nav li {
@@ -615,67 +644,54 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-}
 
-@media (min-width: 1440px) {
-
-.wrapper {
+  @mixin atLarge {
     padding-left: 100px;
-    padding-right: 100px
-}
+    padding-right: 100px;
   }
+}
 
 .logo {
   max-width: 100px;
 }
 
 .row {
+ @mixin clearfix;
 padding-right: -20px;
 }
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
 .col {
   width: 100%;
   float: left;
   padding-right: 20px;
-}
 
-@media (min-width: 411px) {
-
-.col {
-    padding-right: 20px
-}
-    .col-xs-11 {
+  @mixin atSmall {
+    &-xs-11 {
       padding-right: 0;
     }
   }
 
-@media (min-width: 1440px) {
-    .col__8--wide{
+  @mixin atLarge {
+    &__8--wide{
       min-width: 327px;
-      /* padding-right: 20px; */
     }
-    .col--lg-2 {
+    &--lg-2 {
       width: 25%;
     }
 
-    .col--lg-5 {
+    &--lg-5 {
       width: 37.5%;
     }
 
-    .col--lg-4 {
+    &--lg-4 {
       width: 30%;
     }
 
-    .col--lg-6 {
+    &--lg-6 {
       width: 50%;
     }
   }
+}
 
 .icons {
   position: relative;

@@ -2,19 +2,24 @@
   background-color: navy;
   height: 90vh;
 
-
+  img {
+    display: none;
+  }
 
   &__text-content {
-    padding-right: 0px
+    padding-right: 0px;
 
     h2 {
       text-align: center;
       margin: 0;
     }
+
   }
+
 
   @mixin atLarge {
     height: 35vh;
+
     img {
       width: 134px;
       height: 107.609px;
