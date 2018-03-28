@@ -1,6 +1,6 @@
 .projects {
   background-color: steelblue;
-  height: 160vh;
+  height: 168vh;
   font-size: 0.7rem;
 
   &__heading {
@@ -15,10 +15,11 @@
     height: 269px;
     /* background-color: white; */
     border: solid 1px black;
-    padding-right: 2rem;
+    /*padding-right: 2rem;*/
     text-align: center;
-    position: relative;
-    transform: translatex(2%), translateY(2%);
+    /*position: relative;
+    transform: translatex(2%), translateY(2%);*/
+    margin-bottom: 10%;
 
     img {
       text-align: center;
