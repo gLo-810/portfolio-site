@@ -6,6 +6,7 @@
   @mixin atSmall {
     &-xs-11 {
       padding-right: 0;
+      width: 100%;
     }
   }
 
