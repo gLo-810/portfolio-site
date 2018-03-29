@@ -452,32 +452,6 @@ template {
 
 /*this teal color is equivalent to lighten function in SASS and is postCSS specific*/
 
-@define-mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
-
-@define-mixin atSmall {
-  @media (min-width: 375px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atMedium {
-  @media (min-width: 768px) {
-    @mixin-content;
-  }
-}
-
-@define-mixin atLarge {
-  @media (min-width: 1440px) {
-    @mixin-content;
-  }
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -507,15 +481,19 @@ body {
     top: 26%;
     left: 0;
 
-    @mixin atLarge {
-        top: 38%;
-      }
-
   }
 
 .hero__text-content h1 {
       font-size: 5rem;
     }
+
+@media (min-width: 1440px) {
+
+.hero__text-content {
+        top: 38%
+
+  }
+  }
 
 .hero__text-content--center {
     /* position: absolute;
@@ -526,26 +504,8 @@ body {
 
 .projects {
   background-color: steelblue;
-  height: 168vh;
+  height: 10%;
   font-size: 0.7rem;
-
-  @mixin atLarge {
-    height: 85vh;
-
-    &__heading {
-      text-align: center;
-
-      h1{
-        margin-top: 0;
-      }
-
-      img {
-        width: 300px;
-        height: 250px;
-        margin-right: -25px;
-      }
-    }
-  }
 
 }
 
@@ -566,7 +526,7 @@ body {
     text-align: center;
     /*position: relative;
     transform: translatex(2%), translateY(2%);*/
-    margin-bottom: 10%;
+    margin-top: 5%;
 
   }
 
@@ -601,6 +561,28 @@ body {
       padding-top: 10px;
     }
 
+@media (min-width: 1440px) {
+
+.projects {
+    height: 85vh
+
+}
+
+    .projects__heading {
+      text-align: center;
+    }
+
+      .projects__heading h1{
+        margin-top: 0;
+      }
+
+      .projects__heading img {
+        width: 300px;
+        height: 250px;
+        margin-right: -25px;
+      }
+  }
+
 .site-header {
   position: fixed;
   background-color: red;
@@ -612,13 +594,13 @@ body {
   position: relative;
   height: 10vh;
   font-size: 0.9rem;
+}
 
-  @mixin atLarge {
-    &--pull-right {
+@media (min-width: 1440px) {
+    .primary-nav--pull-right {
       float: right;
     }
   }
-}
 
 .primary-nav ul {
     position: relative;
@@ -626,11 +608,13 @@ body {
     top: .96rem;
     padding: 10px 0;
     margin: 0;
+  }
 
+@media (min-width: 1440px) {
 
-    @mixin atLarge {
-      padding: 20px 0;
-    }
+.primary-nav ul {
+      padding: 20px 0
+  }
   }
 
 .primary-nav li {
@@ -649,55 +633,65 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-
-  @mixin atLarge {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 }
+
+@media (min-width: 1440px) {
+
+.wrapper {
+    padding-left: 100px;
+    padding-right: 100px
+}
+  }
 
 .logo {
   max-width: 100px;
 }
 
 .row {
- @mixin clearfix;
 padding-right: -20px;
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 .col {
   width: 100%;
   float: left;
-
-
-  @mixin atLarge {
-
-    padding-right: 20px;
-
-    &__8--wide{
-      min-width: 327px;
-    }
-    &--lg-2 {
-      width: 25%;
-    }
-
-    &--lg-5 {
-      width: 37.5%;
-    }
-
-    &--lg-4 {
-      width: 30%;
-    }
-
-    &--lg-6 {
-      width: 50%;
-    }
-  }
 }
 
 .col-xs-11 {
       width: 100%;
     }
+
+@media (min-width: 1440px) {
+
+.col {
+
+    padding-right: 20px
+}
+
+    .col__8--wide{
+      min-width: 327px;
+    }
+    .col--lg-2 {
+      width: 25%;
+    }
+
+    .col--lg-5 {
+      width: 37.5%;
+    }
+
+    .col--lg-4 {
+      width: 30%;
+    }
+
+    .col--lg-6 {
+      width: 50%;
+    }
+  }
 
 .icons {
   position: relative;
@@ -751,15 +745,6 @@ padding-right: -20px;
   background-color: #42a1f4;
   height: 90vh;
 
-  @mixin atLarge {
-    height: 35vh;
-    img {
-      width: 134px;
-      height: 107.609px;
-      text-align: center;
-    }
-  }
-
 }
 
 .about img {
@@ -774,3 +759,16 @@ padding-right: -20px;
       text-align: center;
       margin: 0;
     }
+
+@media (min-width: 1440px) {
+
+.about {
+    height: 35vh
+
+}
+    .about img {
+      width: 134px;
+      height: 107.609px;
+      text-align: center;
+    }
+  }
