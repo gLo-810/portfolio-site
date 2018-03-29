@@ -592,7 +592,7 @@ body {
 
 .primary-nav {
   position: relative;
-  height: 10vh;
+  height: 7vh;
   font-size: 0.9rem;
 }
 
@@ -604,10 +604,10 @@ body {
 
 .primary-nav ul {
     position: relative;
-    left: .96rem;
     top: .96rem;
-    padding: 10px 0;
-    margin: 0;
+    padding:0;
+    margin:auto 0;
+    text-align: center;
   }
 
 @media (min-width: 1440px) {
@@ -618,14 +618,21 @@ body {
   }
 
 .primary-nav li {
-    list-style: none;
-    float: left;
-    padding-right: 20px;
+    display: inline;
+  }
+
+@media (min-width: 1440px) {
+
+.primary-nav li {
+      padding-right: 20px
+  }
   }
 
 .primary-nav a {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    padding: 5px;
   }
 
 .wrapper {
