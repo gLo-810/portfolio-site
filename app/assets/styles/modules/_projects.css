@@ -13,13 +13,13 @@
 
   &__project-box {
     height: 269px;
-    /* background-color: white; */
     border: solid 1px black;
-    /*padding-right: 2rem;*/
     text-align: center;
-    /*position: relative;
-    transform: translatex(2%), translateY(2%);*/
     margin-top: 5%;
+
+    @mixin XLarge {
+      margin-top: 2%;
+    }
 
     img {
       text-align: center;
@@ -36,6 +36,14 @@
         display: none;
       }
 
+      @mixin atLarge {
+        min-height: 215px;
+        padding: 25px;
+        p {
+          display: block;
+        }
+      }
+
       h1 {
         font-size: 1rem;
         margin-top: 0;
@@ -45,7 +53,6 @@
 
     &--pull-right {
       padding-top: 0.4rem;
-      /* padding-left: 2rem; */
     }
 
     .buttons {

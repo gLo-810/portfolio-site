@@ -520,14 +520,18 @@ body {
 
 .projects__project-box {
     height: 269px;
-    /* background-color: white; */
     border: solid 1px black;
-    /*padding-right: 2rem;*/
     text-align: center;
-    /*position: relative;
-    transform: translatex(2%), translateY(2%);*/
     margin-top: 5%;
 
+  }
+
+@media (min-width: 1920px) {
+
+.projects__project-box {
+      margin-top: 2%
+
+  }
   }
 
 .projects__project-box img {
@@ -546,6 +550,17 @@ body {
         display: none;
       }
 
+@media (min-width: 1440px) {
+
+.projects__project-box .projects__text-box {
+        min-height: 215px;
+        padding: 25px
+    }
+        .projects__project-box .projects__text-box p {
+          display: block;
+        }
+  }
+
 .projects__project-box .projects__text-box h1 {
         font-size: 1rem;
         margin-top: 0;
@@ -554,7 +569,6 @@ body {
 
 .projects__project-box--pull-right {
       padding-top: 0.4rem;
-      /* padding-left: 2rem; */
     }
 
 .projects__project-box .buttons {
@@ -593,7 +607,7 @@ body {
 .primary-nav {
   position: relative;
   height: 7vh;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
@@ -604,6 +618,11 @@ body {
   }
 
 @media (min-width: 1440px) {
+
+.primary-nav {
+    font-size: 1.2rem
+}
+
     .primary-nav--pull-right {
       float: right;
     }
@@ -620,7 +639,8 @@ body {
 @media (min-width: 1440px) {
 
 .primary-nav ul {
-      padding: 20px 0
+      padding: 20px 0;
+      top: -.5rem
   }
   }
 
@@ -631,7 +651,7 @@ body {
 @media (min-width: 1440px) {
 
 .primary-nav li {
-      padding-right: 20px
+      padding-right: 7px
   }
   }
 
@@ -666,10 +686,10 @@ body {
 
 @media (min-width: 1440px) {
 
-.wrapper {
-    padding-left: 100px;
-    padding-right: 100px
-}
+    .wrapper--large {
+      padding-left: 25px;
+      padding-right: 15px;
+    }
   }
 
 .logo {
@@ -735,7 +755,7 @@ padding-right: -20px;
   }
 
 .icons--footer  a > i{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     padding-left: 20%;
   }
 
@@ -823,7 +843,7 @@ padding-right: -20px;
 @media (min-width: 1440px) {
 
 .footer-nav ul {
-      padding: 20px 0
+      padding: 0
   }
   }
 

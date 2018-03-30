@@ -10,7 +10,11 @@
   }
 
   @mixin atLarge {
-    padding-left: 100px;
-    padding-right: 100px;
+
+    &--large {
+      padding-left: 25px;
+      padding-right: 15px;
+    }
+
   }
 }
