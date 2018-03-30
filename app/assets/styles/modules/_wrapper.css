@@ -4,6 +4,11 @@
   padding-right: 20px;
   margin: 0 auto;
 
+  @mixin atMedium {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
   @mixin atLarge {
     padding-left: 100px;
     padding-right: 100px;

@@ -1,4 +1,4 @@
-.primary-nav {
+.footer-nav {
   position: relative;
   height: 7vh;
   font-size: 0.9rem;
@@ -15,9 +15,8 @@
 
   ul {
     position: relative;
-    top: .96rem;
-    padding:0;
-    margin:auto 0;
+    padding: 5px;
+    margin: auto 0;
     text-align: center;
 
     @mixin atLarge {

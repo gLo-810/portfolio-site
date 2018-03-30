@@ -18,18 +18,16 @@
       font-size: 5rem;
     }
 
+    @mixin atMedium {
+        top: 33%;
+      }
+
     @mixin atLarge {
         top: 38%;
       }
-
   }
 
   &__text-content--center {
-    /* position: absolute;
-    width: 100%;
-    transform: translateX(2%); */
     text-align: center;
   }
-
-
 }

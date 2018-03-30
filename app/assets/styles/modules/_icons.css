@@ -1,23 +1,19 @@
 .icons {
   position: relative;
-
   font-size: 1.7rem;
+
   i {
     color: white;
     font-size: 2rem;
     padding-right: 20px;
   }
 
+
   &--footer  a > i{
     font-size: 1.6rem;
-    padding-right: 50px;
-
+    padding-left: 20%;
   }
 
-  &--footer-pull-right {
-    position: relative;
-    transform: translateX(9%);
-  }
 
   &__arrow {
     position: relative;
