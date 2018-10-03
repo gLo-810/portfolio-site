@@ -2,8 +2,17 @@
   background-color: navy;
   height: 90vh;
 
+
+
   img {
     display: none;
+
+    @mixin atLarge {
+      display: block;
+      top: 0;
+      left: 0;
+      transform: translate(50%,50%);
+    }
   }
 
   &__text-content {

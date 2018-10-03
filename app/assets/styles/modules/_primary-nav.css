@@ -2,11 +2,6 @@
   position: relative;
   height: 10vh;
 
-  @mixin atLarge {
-    &--pull-right {
-      float: right;
-    }
-  }
 
   ul {
     position: relative;
@@ -18,13 +13,14 @@
 
     @mixin atLarge {
       padding: 20px 0;
+      float: right;
     }
   }
 
   li {
     list-style: none;
     float: left;
-    padding-right: 20px;
+    padding-right: 1.7rem;
   }
 
   a {
