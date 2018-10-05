@@ -9,6 +9,11 @@
   &--footer  a > i{
     font-size: 2.5rem;
     padding-right: 50px;
+
+    @mixin atLarge {
+      font-size: 2rem;
+    }
+
   }
 
   &__arrow {

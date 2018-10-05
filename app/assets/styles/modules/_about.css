@@ -2,6 +2,19 @@
   background-color: navy;
   height: 90vh;
 
+  &__content {
+    padding: 2% 0;
+
+    @mixin atLarge {
+      height: 100%;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+
 
 
   img {
