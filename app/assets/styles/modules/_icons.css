@@ -7,8 +7,12 @@
   }
 
   &--footer  a > i{
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     padding-right: 50px;
+
+    @mixin atMedium {
+      font-size: 2rem;
+    }
 
     @mixin atLarge {
       font-size: 2rem;

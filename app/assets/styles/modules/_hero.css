@@ -15,7 +15,19 @@
     left: 0;
 
     h1 {
-      font-size: 5rem;
+      font-size: 3rem;
+
+      @mixin atMedium {
+        font-size: 5rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.4rem;
+
+      @mixin atMedium {
+        font-size: 1.5rem;
+      }
     }
 
     @mixin atLarge {

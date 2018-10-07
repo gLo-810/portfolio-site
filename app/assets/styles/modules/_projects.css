@@ -1,6 +1,6 @@
 .projects {
   background-color: steelblue;
-  height: 85vh;
+  min-height: 85vh;
   /* position: relative; */
 
   &__content {
@@ -22,19 +22,20 @@
   }
 
   &__project-box {
-    height: 300px;
+    min-height: 300px;
+    padding: 3% 0;
     /* background-color: white; */
     /* border: solid 1px black; */
     /* padding: 25px; */
     /*padding-left: 60px;
     padding-top: 20px;*/
-    padding: 1rem 0;
+    /* padding: 1rem 0;
     text-align: center;
     position: relative;
-    transform: translatex(2%), translateY(2%);
+    transform: translatex(2%), translateY(2%); */
 
 
-    img {
+    /* img {
       width: 300px;
       height: 250px;
       margin-right: -25px;
@@ -54,11 +55,15 @@
       @mixin atLarge {
         p {
           height: 100%;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
+
+          @mixin atMedium {
+            font-size: 1.3rem;
+          }
         }
       }
 
 
-    }
+    } */
   }
 }

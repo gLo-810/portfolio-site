@@ -1,6 +1,10 @@
 .about {
   background-color: navy;
-  height: 90vh;
+  min-height: 90vh;
+
+  /* @mixin atMedium {
+    min-height: 80vh;
+  } */
 
   &__content {
     padding: 2% 0;
@@ -18,7 +22,6 @@
 
 
   img {
-    display: none;
 
     @mixin atLarge {
       display: block;
