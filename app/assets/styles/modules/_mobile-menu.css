@@ -1,0 +1,15 @@
+.mobile-menu {
+  @mixin clearfix;
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+
+  @mixin atMedium {
+    font-size: 2.3rem;
+  }
+
+  @mixin atLarge {
+    display: none;
+  }
+}

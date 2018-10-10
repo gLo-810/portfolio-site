@@ -1,17 +1,30 @@
 .primary-nav {
-  position: relative;
-  height: 10vh;
+  /* position: relative; */
+  min-height: 10vh;
+  display: none;
+  width: 95%;
+
+  .expand {
+    display: block;
+  }
+
+  /* @miixin atLarge {
+    display: block;
+  } */
 
 
   ul {
-    position: relative;
-    left: .96rem;
-    top: .96rem;
-    padding: 10px 0;
-    margin: 0;
+
+    text-align: center;
+
 
 
     @mixin atLarge {
+      position: relative;
+      left: .96rem;
+      top: .96rem;
+      padding: 10px 0;
+      margin: 0;
       padding: 20px 0;
       float: right;
     }
@@ -19,8 +32,13 @@
 
   li {
     list-style: none;
-    float: left;
-    padding-right: 1.7rem;
+    padding: 2% 0;
+
+    @mixin atLarge {
+      float: left;
+      padding-right: 1.7rem;
+    }
+
   }
 
   a {

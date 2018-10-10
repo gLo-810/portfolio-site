@@ -662,21 +662,33 @@ body {
 }
 
 .primary-nav {
-  position: relative;
-  height: 10vh;
+  /* position: relative; */
+  min-height: 10vh;
+  display: none;
+  width: 95%;
 }
 
+.primary-nav .expand {
+    display: block;
+  }
+
+/* @miixin atLarge {
+    display: block;
+  } */
+
 .primary-nav ul {
-    position: relative;
-    left: .96rem;
-    top: .96rem;
-    padding: 10px 0;
-    margin: 0;
+
+    text-align: center;
   }
 
 @media (min-width: 1440px) {
 
 .primary-nav ul {
+      position: relative;
+      left: .96rem;
+      top: .96rem;
+      padding: 10px 0;
+      margin: 0;
       padding: 20px 0;
       float: right
   }
@@ -684,8 +696,17 @@ body {
 
 .primary-nav li {
     list-style: none;
-    float: left;
-    padding-right: 1.7rem;
+    padding: 2% 0;
+
+  }
+
+@media (min-width: 1440px) {
+
+.primary-nav li {
+      float: left;
+      padding-right: 1.7rem
+
+  }
   }
 
 .primary-nav a {
@@ -809,4 +830,31 @@ padding-right: -20px;
 
 .page-section--footer{
     padding: 0.5rem;
+  }
+
+.mobile-menu {
+  float: right;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.mobile-menu::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media (min-width: 768px) {
+
+.mobile-menu {
+    font-size: 2.3rem
+}
+  }
+
+@media (min-width: 1440px) {
+
+.mobile-menu {
+    display: none
+}
   }
