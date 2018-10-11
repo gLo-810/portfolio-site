@@ -10910,8 +10910,13 @@ var MobileMenu = function () {
 
       this.menuButton.on('click', function () {
 
-        (0, _jquery2.default)('.primary-nav').slideToggle(400, function () {
+        //set min-height
+        var minHeight = (0, _jquery2.default)('.primary-nav').css('min-height');
+
+        //disable min-height for smooth slide, then re enable in the function
+        (0, _jquery2.default)('.primary-nav').css('min-height', 0).slideToggle(400, function () {
           (0, _jquery2.default)(this).toggleClass('.expand');
+          (0, _jquery2.default)(this).css('min-height', minHeight);
         });
       });
     }

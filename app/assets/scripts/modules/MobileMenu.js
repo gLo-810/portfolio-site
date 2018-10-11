@@ -11,10 +11,15 @@ class MobileMenu {
   events(){
 
 
-    this.menuButton.on('click', function(){
+    this.menuButton.on('click', () => {
 
-          $('.primary-nav').slideToggle(400, function() {
+          //set min-height
+          let minHeight = $('.primary-nav').css('min-height');
+
+          //disable min-height for smooth slide, then re enable in the function
+          $('.primary-nav').css('min-height', 0).slideToggle(400, function() {
             $(this).toggleClass('.expand');
+            $(this).css('min-height', minHeight);
 
           });
 
