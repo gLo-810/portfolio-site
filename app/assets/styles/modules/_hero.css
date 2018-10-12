@@ -1,8 +1,10 @@
 .hero {
   /* background-color: navy; */
   background-image: url('../../assets/images/office-surf.jpg');
+  background-size: cover;
   height: 100vh;
   max-width: 100%;
+
 
   h1 {
     margin: 0;
