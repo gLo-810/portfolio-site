@@ -464,13 +464,22 @@ body {
 
 .hero {
   /* background-color: navy; */
-  background-image: url('../../assets/images/office-surf.jpg');
+  background-image: url('../../assets/images/small-vw.jpg');
   background-size: cover;
   height: 100vh;
   max-width: 100%;
 
 
 }
+
+@media (min-width: 768px) {
+
+.hero {
+      background-image: url('../../assets/images/medium-vw.jpg')
+
+
+}
+  }
 
 .hero h1 {
     margin: 0;
