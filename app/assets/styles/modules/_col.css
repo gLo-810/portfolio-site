@@ -9,6 +9,12 @@
     }
   }
 
+  @mixin atMedium {
+    &-m-4 {
+      width: 33.33%
+    }
+  }
+
   @mixin atLarge {
     &__8--wide{
       min-width: 327px;

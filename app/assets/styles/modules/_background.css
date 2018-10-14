@@ -1,0 +1,15 @@
+.background {
+
+  background-image: url('../../assets/images/small-vw.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+
+  @mixin atMedium {
+      background-image: url('../../assets/images/medium-vw.jpg');
+  }
+
+  @mixin atLarge {
+    background-image: url('../../assets/images/large-vw.jpg');
+  }
+
+}

@@ -1,14 +1,6 @@
 .hero {
-  /* background-color: navy; */
-  background-image: url('../../assets/images/small-vw.jpg');
-  background-size: cover;
   height: 100vh;
   max-width: 100%;
-
-  @mixin atMedium {
-      background-image: url('../../assets/images/medium-vw.jpg');
-  }
-
 
   h1 {
     margin: 0;
