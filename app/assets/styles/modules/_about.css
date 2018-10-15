@@ -20,6 +20,13 @@
     }
   }
 
+  /* &__image {
+
+    height: 100%;
+    width: 15%;
+    border-radius: 100%;
+  } */
+
 
 
 
@@ -27,19 +34,26 @@
     border-radius: 100%;
     border: 7px solid white;
     background-color: black;
+    height:200px;
+    width: 200px;
     top: 0;
     left: 0;
     transform: translate(50%,-2%);
 
     @mixin atMedium {
-      transform: translate(20%,25%);
+      height:250px;
+      width: 250px;
+      top: 0;
+      left: 0;
+      transform: translate(13.5%,13.5%);
     }
 
     @mixin atLarge {
-      display: block;
+      height: 400px;
+      width: auto;
       top: 0;
       left: 0;
-      transform: translate(50%,50%);
+      transform: translate(0%,0%);
     }
   }
 
@@ -51,17 +65,6 @@
       margin: 0;
     }
 
-  }
-
-
-  @mixin atLarge {
-    height: 35vh;
-
-    img {
-      width: 134px;
-      height: 107.609px;
-      text-align: center;
-    }
   }
 
 }

@@ -4,13 +4,18 @@
   display: none;
   width: 90%;
 
+
+
   .expand {
     display: block;
   }
 
-  /* @miixin atLarge {
+  @mixin atLarge {
     display: block;
-  } */
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
 
 
   ul {
@@ -21,11 +26,7 @@
 
     @mixin atLarge {
       position: relative;
-      left: .96rem;
       top: .96rem;
-      padding: 10px 0;
-      margin: 0;
-      padding: 20px 0;
       float: right;
     }
   }

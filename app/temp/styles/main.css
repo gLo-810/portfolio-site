@@ -549,10 +549,19 @@ body {
       }
   }
 
+/* &__image {
+
+    height: 100%;
+    width: 15%;
+    border-radius: 100%;
+  } */
+
 .about img {
     border-radius: 100%;
     border: 7px solid white;
     background-color: black;
+    height:200px;
+    width: 200px;
     top: 0;
     left: 0;
     -webkit-transform: translate(50%,-2%);
@@ -562,19 +571,24 @@ body {
 @media (min-width: 768px) {
 
 .about img {
-      -webkit-transform: translate(20%,25%);
-              transform: translate(20%,25%)
+      height:250px;
+      width: 250px;
+      top: 0;
+      left: 0;
+      -webkit-transform: translate(13.5%,13.5%);
+              transform: translate(13.5%,13.5%)
   }
   }
 
 @media (min-width: 1440px) {
 
 .about img {
-      display: block;
+      height: 400px;
+      width: auto;
       top: 0;
       left: 0;
-      -webkit-transform: translate(50%,50%);
-              transform: translate(50%,50%)
+      -webkit-transform: translate(0%,0%);
+              transform: translate(0%,0%)
   }
   }
 
@@ -587,20 +601,6 @@ body {
       text-align: center;
       margin: 0;
     }
-
-@media (min-width: 1440px) {
-
-.about {
-    height: 35vh
-
-}
-
-    .about img {
-      width: 134px;
-      height: 107.609px;
-      text-align: center;
-    }
-  }
 
 .projects {
   background-color: rgba(102, 102, 102, 0.8);
@@ -678,10 +678,18 @@ body {
 
 .site-header {
   position: fixed;
-  background-color: red;
+  background-color: rgba(0,0,0, 0.8);
   width: 100%;
   z-index: 2;
+  opacity: 0;
+  -webkit-transition: 0.9s ease-out;
+  transition: 0.9s ease-out;
+
 }
+
+.site-header--dark {
+    opacity: 1;
+  }
 
 .primary-nav {
   /* position: relative; */
@@ -694,9 +702,14 @@ body {
     display: block;
   }
 
-/* @miixin atLarge {
+@media (min-width: 1440px) {
+
+.primary-nav {
     display: block;
-  } */
+    width: 100%;
+    font-size: 1.3rem
+}
+  }
 
 .primary-nav ul {
 
@@ -707,11 +720,7 @@ body {
 
 .primary-nav ul {
       position: relative;
-      left: .96rem;
       top: .96rem;
-      padding: 10px 0;
-      margin: 0;
-      padding: 20px 0;
       float: right
   }
   }
@@ -857,7 +866,7 @@ padding-right: -20px;
 .footer {
   text-align: center;
   height: 6vh;
-  background-color: navy;
+  background-color: black;
 }
 
 .page-section {
@@ -873,6 +882,7 @@ padding-right: -20px;
   cursor: pointer;
   font-size: 1.5rem;
   z-index: 10;
+  padding-bottom: 5px;
 }
 
 .mobile-menu::after {
