@@ -7,8 +7,11 @@ gulp.task('watch', function() {
 
   browserSync.init({
     notify: false,
+    online: true,
+    tunnel: 'portfolio',
     server: {
-      baseDir: "app"
+      baseDir: "app",
+            index : "index.html"
     }
   });
 
